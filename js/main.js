@@ -26,7 +26,7 @@ if (ataqueCharizard === ataqueBulbasaur){
     vidaCharizard -= ataqueBulbasaur
 } 
 else if(ataqueBulbasaur > ataqueCharizard){
-    document.write("Bulbasaur le saca " + ataqueBulbasaur + " a Charizard");
+    document.write("Bulbasaur le saca " + ataqueBulbasaur + " puntos de vida a Charizard");
     document.write('<div class="col"> <div class="card"> <img src="images/ataque bulbasaur.webp"  alt="..."> <div class="card-body"><h2 class="card-title">Bulbasaur le hace mucho daño a Charizard</h2><h3 class="card-text">Cuidado Charizard!</h3></div></div></div>')
     vidaBulbasaur -= ataqueCharizard
 }
@@ -39,8 +39,8 @@ else{
 
 }
 console.log("Ronda numero " + ronda);
-console.log("Bulbasaur ataco a charizard y queda en " + vidaCharizard + " de vida");
-console.log("Charizard ataco a bulbasaur y queda en " + vidaBulbasaur + " de vida");
+console.log("Bulbasaur ataco a charizard y queda en " + vidaCharizard + " puntos de vida");
+console.log("Charizard ataco a bulbasaur y queda en " + vidaBulbasaur + " puntos de vida");
 
 }
 
