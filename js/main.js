@@ -22,8 +22,8 @@ console.log(vidaBulbasaur);
 
 let ronda = 1;
 while(vidaCharizard > 0 && vidaBulbasaur > 0){
-    console.log("Ronda numero " + ronda);
-    document.write("Comienza la batalla, ronda numero " + ronda)
+    console.log("Comienza la batalla" + ronda);
+    document.write("Comienza la ronda numero " + ronda)
     ronda+=1;
     document.write('<div class="row row-cols-12 row-cols-md-4">')
 let ataqueCharizard = Math.ceil(Math.random() * (MAX_POWER - MIN_POWER) + MIN_POWER);
