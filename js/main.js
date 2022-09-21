@@ -1,3 +1,13 @@
+// se inicia la pagina con un formulario interactivo antes de ver el resultado de la batalla
+let nombre = prompt("Ingrese su nombre");
+console.log(nombre);
+let apellido = prompt("Ingrese su apellido");
+console.log(apellido)
+let edad = prompt("Ingrese su edad");
+console.log(edad)
+
+alert("Bienvenido a la pagina de luchas aleatorias pokemon!")
+
 
 // Le aplique una constante para determinar el daño minimo y maximo que se hagan en el duelo
 const MIN_POWER = 40;
@@ -10,14 +20,16 @@ let vidaBulbasaur = 200;
 console.log(vidaCharizard);
 console.log(vidaBulbasaur);
 
-let ronda = 0;
+let ronda = 1;
 while(vidaCharizard > 0 && vidaBulbasaur > 0){
+    console.log("Ronda numero " + ronda);
+    document.write("Comienza la batalla, ronda numero " + ronda)
     ronda+=1;
     document.write('<div class="row row-cols-12 row-cols-md-4">')
 let ataqueCharizard = Math.ceil(Math.random() * (MAX_POWER - MIN_POWER) + MIN_POWER);
     console.log("Ataca charizard...")
    console.log ("Charizard usa Giro de fuego y le saca a bulbasaur " + ataqueCharizard + " puntos de vida");
-let ataqueBulbasaur = Math.ceil(Math.random() * (MAX_POWER - MIN_POWER) + MIN_POWER);
+    ataqueBulbasaur = Math.ceil(Math.random() * (MAX_POWER - MIN_POWER) + MIN_POWER);
    console.log("Ataca Bulbasaur...")
    console.log ("Bulbasaur usa espesura y le saca a charizard " + ataqueBulbasaur + " puntos de vida");
 
@@ -38,11 +50,9 @@ else{
 
 
 }
-console.log("Ronda numero " + ronda);
-console.log("Bulbasaur ataco a charizard y queda en " + vidaCharizard + " puntos de vida");
-console.log("Charizard ataco a bulbasaur y queda en " + vidaBulbasaur + " puntos de vida");
-
 }
+
+// Aca se marca lo que sucede si uno de los 2 consigue llegar a 0 o nro negativo
 
 if(vidaBulbasaur > 0){
     console.log("La batalla fue ganada por Bulbasaur")
