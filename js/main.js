@@ -56,8 +56,8 @@ else{
 
 if(vidaBulbasaur > 0){
     console.log("La batalla fue ganada por Bulbasaur")
-    document.write('<div class="col"> <div class="card"> <img src="images/derrota charizard.webp"  alt="..."> <div class="card-body"><h2 class="card-title">Ganó Bulbasaur</h5><h3 class="card-text">Felicitaciones!</h3></div></div></div>')
+    document.write('<div class="col"> <div class="card"> <img src="images/derrota charizard.webp"  alt="..."> <div class="card-body"><h2 class="card-title">Perdio Charizard</h5><h3 class="card-text">Felicitaciones!</h3></div></div></div>')
 }else{
     console.log("La batalla fue ganada por Charizard")
-    document.write('<div class="col"> <div class="card"> <img src="images/derrota bulbasaur.jpg"  alt="..."> <div class="card-body"><h2 class="card-title">Ganó Charizard!</h2><h3 class="card-text">Felicitaciones!</h3></div></div></div>')
+    document.write('<div class="col"> <div class="card"> <img src="images/derrota bulbasaur.jpg"  alt="..."> <div class="card-body"><h2 class="card-title">Perdió Bulbasaur</h2><h3 class="card-text">Felicitaciones!</h3></div></div></div>')
 }
