@@ -23,6 +23,8 @@ const MAX_POWER = 70;
 
 // se identifica una lista de pokemons y se eliminan los que no van a luchar
 let pokemones = ["bulbasaur", "pikachu","mewtwo","onyx","charizard"]
+let pokeLista = pokemones.map((pok, lista) => lista + " - " + pok)
+console.log(pokeLista)
 pokemones.splice(1, 3);
 console.log(pokemones)
 
