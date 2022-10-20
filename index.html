@@ -9,13 +9,30 @@
     <style></style>
 </head>
 <body>
-    <div>
-    <h1>Batalla pokemon</h1>
-    </div>
-    
-    <script src="js/main.js"></script>
+    <h1 id="titulo">Batalla pokemon</h1>
+    <form action="" id="formulario">
+        <h2>Ingrese su nombre</h2>
+        <input type="text">
+        <h2>Ingrese su apellido</h2>
+        <input type="text">
+        <h2>Ingrese su edad</h2>
+        <input type="text">
+        <br><br>
+        <button id="btn">Enviar</button>
+    </form>
+    <div id="pok"></div>
+    <h3 id="ronda"></h3>
+
     <script>
-        // Codigo javascript
+        const form = document.querySelector('form')
+        form.addEventListener('submit', (evt) => {
+            evt.preventDefault()
+            console.log(evt.target[0].value)
+            console.log(evt.target[1].value)
+            console.log(evt.target[2].value)
+        })
+        
     </script>
+    <script src="js/main.js"></script>
 </body>
 </html>

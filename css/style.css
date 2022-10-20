@@ -4,8 +4,18 @@ body{
 h1{
     background-color: aqua;
     padding: 1rem;
-    margin: 1rem;
+    margin: 2rem;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+#ronda{
+    background-color: rgb(230, 38, 38);
+    padding: 1rem;
+    display: inline-block;
+    width: 382px;
+    margin-left: 709px;
+    text-align: center;
 }
 div{
     display: flex;
@@ -16,11 +26,12 @@ div{
 }
 
 .card {
+    background-color: gray;
     display: flex;
     flex-direction: column;
     align-content: space-around;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 350px;
+    width: 557px;
     height: 400px;
     margin: 15px 0;
     padding: 10px;
@@ -31,4 +42,38 @@ div{
     height: 200px;
     display: block;
     margin: 0 auto;
+}
+.col{
+    display: flex;
+
+}
+.cajaPokemones{
+    background-color: rgb(96, 144, 216);
+    width: 300px;
+    padding: 4rem;
+    margin: 1rem;
+    width: 238px;
+}
+.cajaPokemones p{
+    background-color: rgb(192, 206, 243);
+    padding: 1rem;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+.pokemones{
+    background-color: rgb(138, 203, 207);
+}
+
+#formulario{
+    background-color: rgb(224, 144, 91);
+    padding: 5rem;
+
+}
+#pok{
+    background-color: rgb(207, 145, 145);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;}
+#pokeFinal{
+    background-color: gray;
 }
